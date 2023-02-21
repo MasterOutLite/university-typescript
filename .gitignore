@@ -1,0 +1,39 @@
+# IDEA files
+.idea
+*.iml
+*.ipr
+*.iws
+
+# VS Code files
+.vscode
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+
+# temp files
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+._*
+*~
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

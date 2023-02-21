@@ -1,0 +1,41 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "sourceType": "module",
+    "createDefaultProgram": true
+  },
+  "extends": ["prettier"],
+  "ignorePatterns": ["**/*"],
+  "plugins": ["prettier"],
+  "rules": {
+    "max-len": ["error", { "code": 120 }]
+  },
+  "overrides": [
+    {
+      "files": ["*.tsx"],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "off"
+      }
+    },
+    {
+      "files": ["*.ts"],
+      "extends": ["prettier"],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "off"
+      }
+    },
+    {
+      "files": ["*.html"],
+      "extends": [],
+      "rules": {
+        "max-len": ["error", { "code": 120 }]
+      }
+    }
+  ]
+}

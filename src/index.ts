@@ -1,12 +1,8 @@
 import './styles/main.scss';
 
+import users from './data/users.json';
 import {print} from './utils';
 
-const user: User = {
-  name: 'Test',
-  age: 14,
-};
-
-window.onload = () => {
-  print(user);
+window.onload = async () => {
+  print(users);
 };

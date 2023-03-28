@@ -1,0 +1,30 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list {
+  position: relative;
+  background-color: blanchedalmond;
+  transition: all 1s;
+}
+
+.list::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  top: 0;
+  background-color: rgb(191, 131, 40);
+  transition: all 1s;
+}
+
+li.list:nth-child(2n) {
+  background-color: aqua;
+}
+
+.list:hover {
+  background-color: brown;
+}
